@@ -16,7 +16,9 @@ It will build the pyerl.so and py.beam files and install them in your ~/.beamer
 Then all you need to do to use it:
 
 	py:init(),
-	UUID = py:call("uuid","uuid4").
+	UUID = py:call("uuid","uuid4"),
+	... 
+	py:stop().
 
 Currently most basic data types are passed between the two languages, but for
 objects that have opaque types like the UUID above the repr of the object will
